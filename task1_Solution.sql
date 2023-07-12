@@ -1,0 +1,1 @@
+SELECT SUBSTRING_INDEX("website", '/', 3) AS domain, COUNT(*) AS count FROM `MY_TABLE` GROUP BY domain HAVING COUNT(*) > 1;
